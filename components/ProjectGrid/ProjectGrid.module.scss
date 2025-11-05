@@ -1,6 +1,13 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/typography.scss' as *;
+
 .gridSection {
   padding: 4rem 2rem;
-  background-color: #999; // or your chosen color
+  background-color: $color-gray; 
+
+  @media (max-width: 768px) {
+    padding: 3rem 1rem;
+  }
 }
 
 .grid {
@@ -9,6 +16,14 @@
   gap: 2rem 4rem;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    gap: 1rem 2rem;
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .card {

@@ -3,13 +3,26 @@
 
 .container {
   background-color: $color-bg;
-  // height: 600px;
   height: 100vh;
   padding: $space-48;
   padding-top: $space-48 * 4;
   color: $text-white;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    padding-top: $space-48
+  }
+
+  @media (max-width: 450px) {
+    padding-top: $space-32
+  }
+}
+
+.heading {
+  @media (max-width: 450px) {
+    font-size: 5rem;
+  }
 }
 
 .centerContent {

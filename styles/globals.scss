@@ -28,6 +28,12 @@
   cursor: url('/cursor.svg') 8 8, auto; // 8 8 = hotspot (dopasuj do środka kursora)
 }
 
+a:hover,
+button:hover,
+.link:hover {
+  cursor: pointer
+}
+
 // TEXT SELECTION
 ::selection {
   background: $color-pink;

@@ -8,6 +8,10 @@
 
 .heading {
   font-size: 4rem;
+
+  @media (max-width: 540px) {
+    font-size: 3rem;
+  }
 }
 
 .flexWrapper {
@@ -26,6 +30,10 @@
 .icons {
   padding: 64px;
   padding-right: 0;
+
+  @media (max-width: 450px) {
+    padding-left: $space-48;
+  }
 }
 
 .copyright {

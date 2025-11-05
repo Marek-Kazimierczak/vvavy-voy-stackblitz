@@ -22,6 +22,9 @@ export default function AnimatedLetters({
       containerRef.current.querySelectorAll(`.${styles.letter}`)
     );
 
+    const isSmallScreen = window.innerWidth <= 540;
+    const spacing = isSmallScreen ? 60 : 100;
+
     // Reset and animate
     gsap.set(letterEls, {
       position: 'absolute',
@@ -31,7 +34,7 @@ export default function AnimatedLetters({
     });
 
     gsap.to(letterEls, {
-      x: (i) => i * 100,
+      x: (i) => i * spacing,
       stagger: 0.3,
       duration: 2,
       ease: 'power2.out',

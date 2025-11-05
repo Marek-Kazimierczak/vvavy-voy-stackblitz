@@ -1,10 +1,8 @@
 import '../styles/globals.scss';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import { IBM_Plex_Mono } from 'next/font/google';
 import { Footer } from '../components/Footer/Footer';
 import Header from '@/components/Header/Header';
-import Head from 'next/head';
 import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
 
 const ibmPlexMono = IBM_Plex_Mono({
@@ -32,7 +30,6 @@ export default function RootLayout({
         <ScrollToTop />
         <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

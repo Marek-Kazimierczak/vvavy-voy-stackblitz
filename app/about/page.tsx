@@ -1,9 +1,11 @@
 import Image from 'next/image';
 
 import styles from './AboutPage.module.scss';
+import { Footer } from '../../components/Footer/Footer';
 
 export default function AboutPage() {
   return (
+    <>
     <main className={styles.container}>
       <div>
         <h1>VVAVY</h1>
@@ -21,5 +23,7 @@ export default function AboutPage() {
         height={600}
       />
     </main>
+    <Footer />
+    </>
   );
 }
