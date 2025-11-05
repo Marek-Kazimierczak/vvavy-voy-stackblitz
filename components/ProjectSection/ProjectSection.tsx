@@ -13,7 +13,7 @@ export default function ProjectSection({ section }: Props) {
   if (section.type === SectionType.SINGLE) {
     return (
       <div className="section">
-        <div className="w-screen h-screen overflow-hidden">
+        <div className="w-screen h-[100dvh] overflow-hidden">
           <ProjectMediaItem src={section.items[0]} />
         </div>
       </div>
@@ -26,7 +26,7 @@ export default function ProjectSection({ section }: Props) {
 
     return (
       <div className="section">
-        <div className={`grid ${columns} gap-4 w-full h-screen p-8`}>
+        <div className={`grid ${columns} gap-4 w-full h-[100dvh] p-8`}>
           {section.items.map((src, i) => (
             <div key={i} className="w-full h-full overflow-hidden">
               <ProjectMediaItem src={src} />

@@ -14,7 +14,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({
   className = '',
 }) => {
   return (
-    <section className={`w-full h-screen overflow-hidden ${className}`}>
+    <section className={`w-full h-[100dvh] overflow-hidden ${className}`}>
       <video
         className="w-full h-full object-cover"
         src={videoUrl}
