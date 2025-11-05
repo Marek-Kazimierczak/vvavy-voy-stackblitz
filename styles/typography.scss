@@ -1,0 +1,26 @@
+@use './variables.scss' as *;
+
+// Body text
+@mixin text-body {
+  font-family: $font-sans;
+  font-size: $font-size-body;
+  font-weight: $weight-bold;
+  // line-height: $line-height-48;
+  margin: $space-24 0;
+}
+
+// Headline
+@mixin text-head {
+  font-family: $font-mono;
+  font-size: $font-size-heading;
+  font-weight: $weight-bold;
+  line-height: normal;
+}
+
+// Menu
+@mixin text-menu {
+  font-family: $font-mono;
+  font-size: $font-size-menu;
+  font-weight: $weight-bold;
+  line-height: $line-height-48;
+}

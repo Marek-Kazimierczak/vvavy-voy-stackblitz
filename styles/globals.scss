@@ -1,0 +1,64 @@
+@use './variables.scss' as *;
+@use './typography.scss' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// :root {
+//   --foreground-rgb: 0, 0, 0;
+//   --background-start-rgb: 214, 219, 220;
+//   --background-end-rgb: 255, 255, 255;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --foreground-rgb: 255, 255, 255;
+//     --background-start-rgb: 0, 0, 0;
+//     --background-end-rgb: 0, 0, 0;
+//   }
+// }
+
+:root {
+  --font-ibm: 'IBM Plex Mono', monospace;
+}
+
+// CUSTOM CURSOR
+* {
+  cursor: url('/cursor.svg') 8 8, auto; // 8 8 = hotspot (dopasuj do środka kursora)
+}
+
+// TEXT SELECTION
+::selection {
+  background: $color-pink;
+  color: white; // lub inny kontrastowy kolor tekstu
+}
+
+::-moz-selection {
+  background: $color-pink;
+  color: white;
+}
+
+// HIDE FULL_PAGE WATERMARK
+.fp-watermark {
+  display: none !important;
+}
+
+// DOM ELEMENTS
+body {
+  font-family: var(--font-ibm);
+  font-size: $font-size-body;
+  color: $text-black;
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @include text-head;
+}
+
+a, p {
+  @include text-body;
+}

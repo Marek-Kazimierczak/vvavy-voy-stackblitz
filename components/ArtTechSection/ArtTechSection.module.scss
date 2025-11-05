@@ -1,0 +1,25 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/typography.scss' as *;
+
+.container {
+  background-color: $color-bg;
+  // height: 600px;
+  height: 100vh;
+  padding: $space-48;
+  padding-top: $space-48 * 4;
+  color: $text-white;
+  display: flex;
+  justify-content: center;
+}
+
+.centerContent {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.textGroup {
+  margin-top: $space-48;
+  gap: $space-32;
+  color: $text-white;
+}

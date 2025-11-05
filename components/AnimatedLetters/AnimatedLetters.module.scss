@@ -1,0 +1,23 @@
+.wrapper {
+  position: relative;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  position: relative;
+  height: 100%;
+  width: 600px;
+}
+
+.letter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 8rem;
+  font-weight: bold;
+  color: white;
+}

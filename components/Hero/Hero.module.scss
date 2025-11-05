@@ -1,0 +1,21 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/typography.scss' as *;
+
+.container {
+  background-color: $color-bg;
+  // height: 600px;
+  height: 100vh;
+  padding: $space-48;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+  align-items: center;
+  padding-top: $space-48 * 4;
+}
+
+// TODO FIX THOSE STYLES
+.textGroup {
+  margin-top: $space-48;
+  gap: $space-32;
+  color: $text-white;
+}

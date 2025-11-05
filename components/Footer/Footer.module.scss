@@ -1,0 +1,33 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/typography.scss' as *;
+
+.footer {
+  background-color: $color-bg;
+  padding: $space-32;
+}
+
+.heading {
+  font-size: 4rem;
+}
+
+.flexWrapper {
+  display: flex;
+  gap: $space-32;
+}
+
+.contact {
+  padding: $space-32 0;
+}
+
+.contactHeading {
+  @include text-menu;
+}
+
+.icons {
+  padding: 64px;
+  padding-right: 0;
+}
+
+.copyright {
+  color: $text-white;
+}

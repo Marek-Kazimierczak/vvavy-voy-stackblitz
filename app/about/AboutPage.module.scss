@@ -1,0 +1,13 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/typography.scss' as *;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: $space-48;
+  color: $text-white;
+  background-color: $color-bg;
+  padding: $space-48;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
