@@ -31,4 +31,8 @@
   margin-top: $space-48;
   gap: $space-32;
   color: $text-white;
+
+  @media (max-width: 450px) {
+    padding-top: 0;
+  }
 }

@@ -12,6 +12,10 @@
   @media (max-width: 540px) {
     font-size: 3rem;
   }
+
+  @media (max-width: 450px) {
+    font-size: 2.5rem;
+  }
 }
 
 .flexWrapper {
@@ -25,6 +29,10 @@
 
 .contactHeading {
   @include text-menu;
+
+  @media (max-width: 450px) {
+    font-size: 2rem;
+  }
 }
 
 .icons {
@@ -32,7 +40,7 @@
   padding-right: 0;
 
   @media (max-width: 450px) {
-    padding-left: $space-48;
+    padding-left: $space-24;
   }
 }
 
